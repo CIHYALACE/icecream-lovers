@@ -1,0 +1,25 @@
+#contuctUs{
+    background-color: #F83D8E;
+    border-radius: 20px;
+    color: #eee;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#contuctUs:hover{
+    box-shadow: 2px 2px 4px #F83D8E , -2px -2px 4px #F83D8E ;
+}
+
+.navbar-brand{
+    font-family: "Berkshire Swash", serif;
+    color: #77449C;
+}
+
+.navbar-brand span{
+    color: #F83D8E;
+}
+
+.nav-item :hover{
+    color: #F83D8E;
+}
+
