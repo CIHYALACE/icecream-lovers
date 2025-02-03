@@ -23,3 +23,7 @@
     color: #F83D8E;
 }
 
+.dropdown-item:hover{
+    background-color: #F83D8E;
+    color: #eee;
+}
