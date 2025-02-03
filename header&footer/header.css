@@ -19,6 +19,10 @@
     color: #F83D8E;
 }
 
+.navbar-brand span:nth-child(2){
+    color: #77449C;
+}
+
 .nav-item :hover{
     color: #F83D8E;
 }
