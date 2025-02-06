@@ -930,7 +930,6 @@ footer img{
 }
 
 .seventh-section{
-    border: 1px solid black;
     height: 90vh;
     background: linear-gradient(295deg, #EFD7EF 8%, #F5F9FC 43%, #F8EAE1 64%, #EAF8F9 87%);
     display: flex;
@@ -992,5 +991,89 @@ footer img{
 }
 
 .seventh-section>div a{
+    color: #000;
+}
+
+.last-section{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.last-section h5{
+    color: #000;
+    width: 40%;
+    height: 10%;
+    text-align: center;
+    font-family: "Berkshire Swash";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 70px;
+}
+
+.last-section h5 span{
+    color: #F83D8E;
+}
+
+.last-section p:nth-child(4){
+    font-size: 15px;
+    font-family: "Archivo";
+    color: #646464;
+}
+
+.last-section #inputGroup{
+    width: 45%;
+    height: 10%;
+}
+
+.last-section #inputGroup input{
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    width: 75%;
+    height: 70%;
+    padding-left: 20px;
+}
+
+.last-section .btn{
+    background-color: #F83D8E;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 14px;
+    transition: 0.2s ease-in-out;
+    padding: 7px 20px 7px 20px;
+}
+
+.last-section div:nth-child(6) label{
+    font-size: 13px;
+    margin-bottom: 10%;
+}
+
+.last-section div:nth-child(8){
+    width: 75%;
+    height: 30%;
+    position: absolute;
+    top: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.last-section div:nth-child(8) img{
+    width: 16.67%;
+    height: 100%;
+}
+
+.last-section a{
+    text-decoration: none;
+    color: #F83D8E;
+    margin-bottom: 30px;
+}
+
+.last-section a i{
     color: #000;
 }
