@@ -1,0 +1,87 @@
+body {
+     padding: 0%;
+     margin: 0%;
+     box-sizing: border-box;
+}
+
+.hero-section {
+     background: linear-gradient(106deg, #EFD7EF 8%, #F5F9FC 40%, #F8EAE1 66%, #EAF8F9 91%);
+     padding: 80px 0;
+     text-align: center;
+}
+
+.team-member img {
+     width: 200px;
+     height: 200px;
+     border-radius: 50%;
+     object-fit: cover;
+}
+
+.social-links a {
+     width: 35px;
+     height: 35px;
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     border-radius: 50%;
+     background-color: #ff69b4;
+     color: white;
+     margin: 0 5px;
+     text-decoration: none;
+}
+
+.page-definder {
+
+     padding: 100px 0;
+     margin-bottom: 50px;
+}
+
+h1 {
+     color: #0F0200;
+     text-align: center;
+     font-family: "Berkshire Swash";
+     font-size: 80px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 80px;
+}
+
+
+.tobebreadcrumb {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 40px 0;
+}
+
+.breadcrumb {
+     background-color: white;
+     padding: 10px 30px;
+     border-radius: 50px;
+     /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+}
+
+.breadcrumb-item a {
+     padding: 10px 10px;
+     text-decoration: none;
+     color: #ff69b4;
+
+
+}
+
+.page-definder h2 {
+     color: #0F0200;
+     text-align: center;
+     font-family: "Berkshire Swash";
+     font-size: 80px;
+     font-style: normal;
+     font-weight: 300;
+     line-height: 80px;
+}
+
+.mainforfooter {
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: end;
+}
