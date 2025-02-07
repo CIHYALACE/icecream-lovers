@@ -54,6 +54,8 @@
           #f8eae1 66%,
           #eaf8f9 91%
         );
+        
+
       }
 
       .text-main {
@@ -131,6 +133,15 @@
         position: relative;
         top: 3rem;
         left: 1rem;
+      }
+      .bot-img{
+        position: absolute;
+        bottom: 0;
+        background-image: url(/images/home1/cloud.png);
+        z-index: 1;
+        width: 100vw;
+        height: 6rem;
+        background-repeat: repeat-x;
       }
     </style>
     <title>IceDelights</title>
@@ -253,10 +264,9 @@
           </div>
         </section>
       </div>
-      <img
-        class="z-1 w-100 position-absolute bottom-0"
-        src="/images/home1/cloud.png"
-      />
+      <div
+        class="bot-img"
+      ></div>
     </header>
   </body>
 </html>
