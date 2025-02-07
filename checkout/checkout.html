@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .order-summary {
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            padding: 20px;
+        }
+        .payment-icons img {
+            height: 24px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container py-5">
+        <h1 class="text-center mb-4">Checkout</h1>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb justify-content-center">
+                <li class="breadcrumb-item"><a href="#" class="text-decoration-none">Home</a></li>
+                <li class="breadcrumb-item"><a href="#" class="text-decoration-none">Cart</a></li>
+                <li class="breadcrumb-item active">Checkout</li>
+            </ol>
+        </nav>
+
+        <div class="row">
+            <div class="col-md-8">
+                <h4 class="mb-3">Billing Address:</h4>
+                <form>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" placeholder="First name" required>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" placeholder="Last name" required>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="Email address" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <select class="form-select" required>
+                            <option value="">Select State</option>
+                            <option>California</option>
+                            <option>New York</option>
+                            <option>Texas</option>
+                        </select>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <select class="form-select" required>
+                                <option value="">Select City</option>
+                                <option>Los Angeles</option>
+                                <option>San Francisco</option>
+                                <option>San Diego</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" placeholder="Zip/postal code" required>
+                        </div>
+                    </div>
+
+                    <h4 class="mb-3">Payment Method:</h4>
+                    <div class="mb-3">
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" name="payment" id="credit" checked>
+                            <label class="form-check-label" for="credit">Credit card</label>
+                        </div>
+                        <div class="payment-icons mt-2">
+                            <img src="visa.png" alt="Visa">
+                            <img src="mastercard.png" alt="Mastercard">
+                            <img src="americanexpress.png" alt="American Express">
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Card number" required>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label>Expiration date</label>
+                            <div class="row">
+                                <div class="col-6">
+                                    <select class="form-select">
+                                        <option>Month</option>
+                                    </select>
+                                </div>
+                                <div class="col-6">
+                                    <select class="form-select">
+                                        <option>Year</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label>Security Code</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" name="payment" id="cash">
+                            <label class="form-check-label" for="cash">Cash on Delivery</label>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" required>
+                            <label class="form-check-label">By clicking the button, you agree to the Terms and Conditions</label>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary w-100" type="submit">Place Order Now</button>
+                </form>
+            </div>
+
+            <div class="col-md-4">
+                <div class="order-summary">
+                    <h4 class="mb-3">Items</h4>
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <h6>3 x Classic Vanilla</h6>
+                                <small class="text-muted">Creamy vanilla ice cream topped with cherry</small>
+                            </div>
+                            <span>$13.00</span>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <h6>6 x Chocolate Brownie</h6>
+                                <small class="text-muted">Rich chocolate ice cream with chunks of brownie</small>
+                            </div>
+                            <span>$23.00</span>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <h6>4 x Strawberry Cake</h6>
+                                <small class="text-muted">Strawberry ice cream swirled with chocolate</small>
+                            </div>
+                            <span>$22.00</span>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <h6>2 x Mint Chocolate</h6>
+                                <small class="text-muted">Mint flavored ice cream with chocolate chips</small>
+                            </div>
+                            <span>$07.50</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <h5>Grand Total</h5>
+                        <h5>$65.50</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
