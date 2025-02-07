@@ -257,6 +257,29 @@ footer img{
     color: #eee;
 }
 
+.btn{
+    background-color: #F83D8E;
+    color: #eee;
+    font-size: 14px;
+    border-radius: 30px;
+    transition: 0.2s ease-in-out;
+    padding: 7px 20px 7px 20px;
+}
+
+.btn:hover{
+    background-color: #F83D8E;
+    transform: scale(1.1);
+    color: #eee;
+}
+
+h5{
+    font-family: "Berkshire Swash";
+}
+
+p{
+    font-family: "Archivo";
+}
+
 .first-section{
     height: 90vh;
     background-image: url(/images/lady-mozza.jpeg);
@@ -305,7 +328,6 @@ footer img{
     color: #0F0200;
     width: 70%;
     height: 15%;
-    font-family: "Berkshire Swash";
     font-size: 60px;
     font-weight: 400;
     margin-bottom: 100px;
@@ -317,22 +339,12 @@ span{
 
 .first-section>div p{
     width: 60%;
-    font-family:"Archivo";
     font-size: 15px;
 }
 
 .first-section>div .btn{
-    background-color: #F83D8E;
-    color: #eee;
-    border-radius: 30px;
     font-size: 14px;
-    transition: 0.2s ease-in-out;
-    padding: 7px 20px 7px 20px;
     z-index: 2;
-}
-
-.first-section>div .btn:hover{
-    transform: scale(1.1);
 }
 
 .second-section{
@@ -367,7 +379,6 @@ span{
     left: 1150px;
 }
 
-
 .second-section img:nth-child(4){
     width: 12%;
     height: 11%;
@@ -400,7 +411,6 @@ span{
     color: #0F0200;
     width: 90%;
     height: 15%;
-    font-family: "Berkshire Swash";
     font-size: 40px;
     font-style: normal;
     font-weight: 400;
@@ -411,25 +421,13 @@ span{
     color: #646464;
     width: 100%;
     height: 6%;
-    font-family: sans-serif;
     font-size: 14px;
     font-style: normal;
     margin-bottom: 20px;
 }
 
 .second-section div:nth-child(6) .btn{
-    background-color: #F83D8E;
-    color: #eee;
-    border-radius: 30px;
-    font-size: 14px;
-    transition: 0.2s ease-in-out;
-    padding: 7px 20px 7px 20px;
     margin-top: 40px;
-}
-
-.second-section div:nth-child(6) .btn:hover{
-    transform: scale(1.05);
-
 }
 
 .third-section{
@@ -482,7 +480,6 @@ span{
 .third-section main p:nth-child(2){
     color: #646464;
     text-align: center;
-    font-family: sans-serif;
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
@@ -541,19 +538,6 @@ span{
     font-weight: 700;
 }
 
-.third-section main>div .card .btn{
-    background-color: #F83D8E;
-    color: #fff;
-    border-radius: 30px;
-    font-size: 14px;
-    transition: 0.2s ease-in-out;
-    padding: 7px 20px 7px 20px;
-}
-
-.third-section main>div .card .btn:hover{
-    transform: scale(1.05);
-}
-
 .fourth-section{
     height: 100vh;
     display: flex;
@@ -566,7 +550,6 @@ span{
     color: #0F0200;
     height: 10%;
     text-align: center;
-    font-family: "Berkshire Swash";
     font-size: 40px;
     font-style: normal;
     font-weight: 400;
@@ -575,7 +558,6 @@ span{
 .fourth-section p{
     color: #646464;
     height: 6%;
-    font-family: sans-serif;
     font-size: 13px;
     font-style: normal;
     margin-bottom: 20px; 
@@ -632,7 +614,6 @@ span{
     width: 70%;
     height: 100%;
     color: black;
-    font-family: "Archivo";
     font-size: 15px;
     font-weight: 600;
     margin-bottom: 0;
@@ -711,7 +692,6 @@ span{
     width: 90%;
     height: 40%;
     text-align: left;
-    font-family: "Berkshire Swash";
     font-size: 75px;
     margin-bottom: 10%;
 }
@@ -719,7 +699,6 @@ span{
 .fifth-section div p{
     color: #fff;
     height: 6%;
-    font-family: "Archivo";
     font-size: 20px;
     font-style: normal;
     margin-bottom: 20px;
@@ -731,18 +710,10 @@ p span{
 
 .fifth-section div .btn{
     font-size: 15px;
-    width: 25%;
+    width: 30%;
     height: 12%;
-    border-radius: 20px;
-    background-color: #F83D8E;
-    color: #fff;
     text-align: center;
     margin-right: 7px;
-    transition: 0.3s ease-in-out;
-}
-
-.fifth-section div .btn:hover{
-    transform: scale(1.1);
 }
 
 .sixth-section{
@@ -795,7 +766,6 @@ p span{
 .sixth-section main p:nth-child(2){
     color: #646464;
     text-align: center;
-    font-family: sans-serif;
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
@@ -837,20 +807,6 @@ p span{
     color: #0F0200;
 }
 
-
-.sixth-section main>div .card .btn{
-    background-color: #F83D8E;
-    color: #fff;
-    border-radius: 30px;
-    font-size: 14px;
-    transition: 0.2s ease-in-out;
-    padding: 7px 20px 7px 20px;
-}
-
-.sixth-section main>div .card .btn:hover{
-    transform: scale(1.05);
-}
-
 .seventh-section{
     height: 90vh;
     position: relative;
@@ -864,7 +820,6 @@ p span{
     color: #0F0200;
     height: 15%;
     text-align: center;
-    font-family: "Berkshire Swash";
     font-size: 40px;
     font-style: normal;
     font-weight: 400;
@@ -873,7 +828,6 @@ p span{
 .seventh-section p{
     color: #646464;
     height: 6%;
-    font-family: sans-serif;
     font-size: 13px;
     font-style: normal;
     margin-bottom: 20px;
@@ -954,7 +908,6 @@ p span{
     color: #0F0200;
     height: 10%;
     text-align: center;
-    font-family: "Berkshire Swash";
     font-size: 40px;
     font-style: normal;
     font-weight: 400; 
@@ -964,7 +917,6 @@ p span{
 .last-section>p{
     color: #646464;
     height: 5%;
-    font-family: sans-serif;
     font-size: 13px;
     font-style: normal;
     margin-bottom: 20px;
@@ -992,5 +944,8 @@ p span{
     color: #000;
     font-weight: 600;
     font-size: 15px;
-    font-family: "Archivo";
+}
+
+.last-section>div p a:hover{
+    color: #F83D8E;
 }
