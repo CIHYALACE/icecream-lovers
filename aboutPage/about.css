@@ -1,0 +1,118 @@
+.hero-section {
+     background: linear-gradient(106deg, #EFD7EF 8%, #F5F9FC 40%, #F8EAE1 66%, #EAF8F9 91%);
+     height: 40vh;
+}
+
+.hero-section h1 {
+     font-family: "Berkshire Swash";
+}
+
+.hero-section a {
+     color: #F83D8E;
+}
+
+h2,
+h3 {
+     font-family: "Berkshire Swash";
+}
+
+.breadcrumb-container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background: white;
+     border-radius: 50px;
+     padding: 10px 20px;
+     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+     width: fit-content;
+     margin: auto;
+
+}
+
+.social-links a {
+     width: 35px;
+     height: 35px;
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     border-radius: 50%;
+     background-color: #ff69b4;
+     color: white;
+     margin: 0 5px;
+     text-decoration: none;
+}
+
+
+
+.btn-custom {
+     background-color: #F83D8E;
+     color: white;
+     border-radius: 50px;
+     padding: 10px 20px;
+}
+
+.btn-custom i {
+     margin-left: 5px;
+}
+
+.stat-card {
+     border: none;
+     border-bottom: 3px solid #F83D8E;
+     border-radius: 10px;
+}
+
+
+
+.journysec {
+     position: relative;
+     overflow: hidden;
+}
+
+/* Right-side floating image */
+.journy-bg-image {
+     position: absolute;
+     right: 0;
+     bottom: 0;
+     max-width: 30%;
+     /* Adjust size as needed */
+}
+
+.journy-bg-image img {
+     width: 100%;
+     height: auto;
+}
+
+
+
+
+
+
+
+
+.missionsec {
+     position: relative;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 50px;
+     background-color: #683292;
+}
+
+.missionsec .image {
+     position: absolute;
+     right: 0;
+     bottom: 0;
+     max-width: 21.2%;
+     /* height: 100%; */
+
+     object-fit: cover;
+
+}
+
+.missionsec img {
+     width: auto;
+     height: auto;
+     height: 50%;
+     /* object-fit: cover; */
+
+}

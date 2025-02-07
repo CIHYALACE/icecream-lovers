@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <style>
+        .product-img {
+            width: 80px;
+            height: 80px;
+            background: #fff5f5;
+            border-radius: 8px;
+            padding: 8px;
+        }
+        .quantity-input {
+            width: 40px;
+            text-align: center;
+            border: none;
+            background: none;
+        }
+        .quantity-control {
+            border: 1px solid #dee2e6;
+            border-radius: 20px;
+            padding: 4px 12px;
+        }
+        .remove-btn {
+            color: #ff4d4d;
+            border: 1px solid #ff4d4d;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        .btn-quantity {
+            border: none;
+            background: none;
+            color: #666;
+            font-weight: bold;
+        }
+        .price {
+            color: #ff0066;
+            font-weight: bold;
+        }
+        .checkout-btn {
+            background: #ff0066;
+            border: none;
+            padding: 12px;
+            border-radius: 25px;
+        }
+        .apply-btn {
+            background: #8a2be2;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            padding: 6px 20px;
+        }
+        .product-details {
+            color: #666;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h4 class="mb-0">Shopping Cart</h4>
+                    <span class="text-muted">(04 Items)</span>
+                </div>
+
+                <!-- Classic Vanilla -->
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col-md-2">
+                                <img src="classicvanilla.jpeg" alt="Classic Vanilla" class="product-img">
+                            </div>
+                            <div class="col-md-4">
+                                <h6 class="mb-1">Classic Vanilla</h6>
+                                <div class="product-details">
+                                    Color: White<br>
+                                    Size: L
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <span class="price">4.99$</span>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="quantity-control d-inline-flex align-items-center">
+                                    <button class="btn-quantity">-</button>
+                                    <input type="text" value="3" class="quantity-input">
+                                    <button class="btn-quantity">+</button>
+                                </div>
+                            </div>
+                            <div class="col-md-1 text-end">
+                                <div class="remove-btn">×</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chocolate Brownie -->
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col-md-2">
+                                <img src="Chocolate Brownie.jpeg" alt="Chocolate Brownie" class="product-img">
+                            </div>
+                            <div class="col-md-4">
+                                <h6 class="mb-1">Chocolate Brownie</h6>
+                                <div class="product-details">
+                                    Color: Brown<br>
+                                    Size: S
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <span class="price">5.49$</span>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="quantity-control d-inline-flex align-items-center">
+                                    <button class="btn-quantity">-</button>
+                                    <input type="text" value="6" class="quantity-input">
+                                    <button class="btn-quantity">+</button>
+                                </div>
+                            </div>
+                            <div class="col-md-1 text-end">
+                                <div class="remove-btn">×</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Strawberry Cake -->
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col-md-2">
+                                <img src="Strawberry Cake.jpeg" alt="Strawberry Cake" class="product-img">
+                            </div>
+                            <div class="col-md-4">
+                                <h6 class="mb-1">Strawberry Cake</h6>
+                                <div class="product-details">
+                                    Color: Red<br>
+                                    Size: M
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <span class="price">5.29$</span>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="quantity-control d-inline-flex align-items-center">
+                                    <button class="btn-quantity">-</button>
+                                    <input type="text" value="4" class="quantity-input">
+                                    <button class="btn-quantity">+</button>
+                                </div>
+                            </div>
+                            <div class="col-md-1 text-end">
+                                <div class="remove-btn">×</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mint Chocolate -->
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col-md-2">
+                                <img src="Mint Chocolate.jpeg" alt="Mint Chocolate" class="product-img">
+                            </div>
+                            <div class="col-md-4">
+                                <h6 class="mb-1">Mint Chocolate</h6>
+                                <div class="product-details">
+                                    Color: Green<br>
+                                    Size: L
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <span class="price">3.99$</span>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="quantity-control d-inline-flex align-items-center">
+                                    <button class="btn-quantity">-</button>
+                                    <input type="text" value="2" class="quantity-input">
+                                    <button class="btn-quantity">+</button>
+                                </div>
+                            </div>
+                            <div class="col-md-1 text-end">
+                                <div class="remove-btn">×</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <a href="#" class="text-decoration-none" style="color: #8a2be2;">
+                        <i class="fas fa-arrow-left me-2"></i>Continue Shopping
+                    </a>
+                </div>
+            </div>
+
+            <!-- Order Summary -->
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title mb-4">Order Summary</h5>
+                        
+                        <div class="mb-3">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Apply Coupons">
+                                <button class="apply-btn">Apply</button>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6>Product Details:</h6>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Sub Total</span>
+                                <span>$63.99</span>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Shipping</span>
+                                <span>$20.00</span>
+                            </div>
+                            <hr>
+                            <div class="d-flex justify-content-between mb-2">
+                                <strong>Grand Total</strong>
+                                <span class="price">$89.99</span>
+                            </div>
+                        </div>
+
+                        <button class="checkout-btn btn btn-primary w-100 text-white">
+                            Proceed to checkout
+                            <i class="fas fa-arrow-right ms-2"></i>
+                        </button>
+
+                        <div class="text-center mt-3">
+                            <small class="text-muted">
+                                <i class="fas fa-shield-alt me-1"></i>
+                                Safe and Secure Payments. Easy Returns.<br>
+                                100% Authentic Products
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

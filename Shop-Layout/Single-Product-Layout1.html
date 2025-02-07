@@ -1,0 +1,338 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Single Product Layout</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+      .header {
+        background: linear-gradient(
+          90deg,
+          rgba(255, 255, 255, 1) 0%,
+          rgba(255, 255, 255, 1) 50%,
+          rgba(255, 255, 255, 1) 100%
+        );
+      }
+      .footer {
+        background-color: #6b2a86;
+      }
+      .footer a {
+        color: #fff;
+      }
+      .footer p {
+        color: #fff;
+      }
+      .footer .footer-logo {
+        color: #fff;
+      }
+      .footer .footer-logo span {
+        color: #ff69b4;
+      }
+    </style>
+  </head>
+  <body class="bg-light">
+    <header class="header py-4 shadow-sm">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+          <img
+            src=""
+            alt="IcyTales Logo"
+            class="img-fluid"
+            style="height: 50px; width: 50px"
+          />
+          <span class="ml-2 h4 font-weight-bold text-purple-700">IcyTales</span>
+        </div>
+        <nav class="d-none d-md-flex">
+          <a class="text-dark mx-3" href="#">Home</a>
+          <a class="text-dark mx-3" href="#">About Us</a>
+          <a class="text-dark mx-3" href="#">Pages</a>
+          <a class="text-dark mx-3" href="#">Blog</a>
+          <a class="text-dark mx-3" href="#">Faq's</a>
+        </nav>
+        <button class="btn btn-pink">Contact Us</button>
+      </div>
+    </header>
+    <main class="container py-5">
+      <div class="text-center mb-5">
+        <h1 class="display-4 font-weight-bold">Single Product Layout 01</h1>
+        <div class="text-muted">
+          <a href="#" class="text-decoration-none text-dark">Home</a> /
+          <a href="#" class="text-decoration-none text-dark">Shop</a> /
+          <span>Product Detail</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 text-center">
+          <img
+            src=""
+            alt="Classic Vanilla Ice Cream"
+            class="img-fluid mb-4"
+            style="max-width: 400px; height: auto"
+          />
+          <div class="d-flex justify-content-center">
+            <img
+              src=""
+              alt="Thumbnail 1"
+              class="img-thumbnail mx-1"
+              style="width: 80px; height: 80px"
+            />
+            <img
+              src=""
+              alt="Thumbnail 2"
+              class="img-thumbnail mx-1"
+              style="width: 80px; height: 80px"
+            />
+            <img
+              src=""
+              alt="Thumbnail 3"
+              class="img-thumbnail mx-1"
+              style="width: 80px; height: 80px"
+            />
+            <img
+              src=""
+              alt="Thumbnail 4"
+              class="img-thumbnail mx-1"
+              style="width: 80px; height: 80px"
+            />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h2 class="h3 font-weight-bold">Classic Vanilla Ice Cream</h2>
+          <div class="d-flex align-items-center mb-3">
+            <div class="text-warning">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span class="ml-2 text-muted">(4.8/5)</span>
+          </div>
+          <p class="h4 text-pink-500 mb-3">$5.99</p>
+          <p class="text-muted mb-4">
+            Neque porro quisquam est qui dolorem ipsum quia dolor sit amet
+            consectetur adipisci velit, sed quia non numquam eius modi tempora
+            incidunt ut labore et dolore magnam.
+          </p>
+          <div class="mb-4">
+            <span class="text-dark">Color:</span>
+            <div class="d-flex mt-2">
+              <button
+                class="btn btn-brown rounded-circle mx-1"
+                style="width: 24px; height: 24px"
+              ></button>
+              <button
+                class="btn btn-green rounded-circle mx-1"
+                style="width: 24px; height: 24px"
+              ></button>
+              <button
+                class="btn btn-red rounded-circle mx-1"
+                style="width: 24px; height: 24px"
+              ></button>
+            </div>
+          </div>
+          <div class="mb-4">
+            <span class="text-dark">Size:</span>
+            <div class="d-flex mt-2">
+              <button class="btn btn-outline-dark mx-1">S</button>
+              <button class="btn btn-outline-dark mx-1">M</button>
+              <button class="btn btn-outline-dark mx-1">L</button>
+            </div>
+          </div>
+          <div class="d-flex align-items-center mb-4">
+            <button class="btn btn-outline-dark">-</button>
+            <span class="mx-3">1</span>
+            <button class="btn btn-outline-dark">+</button>
+          </div>
+          <div class="d-flex">
+            <button class="btn btn-pink mr-3">Add to Cart</button>
+            <button class="btn btn-link text-dark">Add to wishlist</button>
+            <button class="btn btn-link text-dark">Compare</button>
+          </div>
+        </div>
+      </div>
+      <div class="mt-5">
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link active text-pink-500" href="#">Description</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Additional Information</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Reviews</a>
+          </li>
+        </ul>
+        <div class="mt-4">
+          <p class="text-muted">
+            Ratione voluptatem sequi nesciunt neque porro quisquam est, qui
+            dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed
+            quia non numquam eius modi tempora incidunt ut labore et dolore
+            magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
+            nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
+            aliquid ex ea commodi consequatur.
+          </p>
+          <p class="text-muted mt-4">
+            Quia voluptas sit aspernatur aut odit aut fugit, sed quia
+            consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt
+            neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+            consectetur, adipisci velit, sed quia non numquam eius modi tempora
+            incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+          </p>
+        </div>
+      </div>
+      <div class="mt-5">
+        <h2 class="h3 font-weight-bold text-center mb-4">
+          Related <span class="text-pink-500">Products</span>
+        </h2>
+        <p class="text-center text-muted mb-5">
+          Choose from some of related products
+        </p>
+        <div class="d-flex flex-wrap justify-content-center">
+          <div class="card mx-2 mb-4" style="width: 16rem">
+            <img src="" class="card-img-top" alt="Strawberry Sundae" />
+            <div class="card-body">
+              <h5 class="card-title">Strawberry Sundae</h5>
+              <p class="card-text text-muted">
+                Strawberry ice cream with fresh strawberries
+              </p>
+              <div class="d-flex align-items-center mb-2">
+                <div class="text-warning">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span class="ml-2 text-muted">(4.8/5)</span>
+              </div>
+              <p class="text-pink-500 h5">$5.99</p>
+            </div>
+          </div>
+          <div class="card mx-2 mb-4" style="width: 16rem">
+            <img src="" class="card-img-top" alt="Chocolate Chip Cookie Cone" />
+            <div class="card-body">
+              <h5 class="card-title">Chocolate Chip Cookie Cone</h5>
+              <p class="card-text text-muted">
+                Chocolate chip cookie dough ice cream in a cone
+              </p>
+              <div class="d-flex align-items-center mb-2">
+                <div class="text-warning">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span class="ml-2 text-muted">(4.5/5)</span>
+              </div>
+              <p class="text-pink-500 h5">$4.49</p>
+            </div>
+          </div>
+          <div class="card mx-2 mb-4" style="width: 16rem">
+            <img src="" class="card-img-top" alt="Rocky Road Sundae" />
+            <div class="card-body">
+              <h5 class="card-title">Rocky Road Sundae</h5>
+              <p class="card-text text-muted">
+                Marshmallow and nutty rocky road ice cream
+              </p>
+              <div class="d-flex align-items-center mb-2">
+                <div class="text-warning">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span class="ml-2 text-muted">(4.6/5)</span>
+              </div>
+              <p class="text-pink-500 h5">$5.89</p>
+            </div>
+          </div>
+          <div class="card mx-2 mb-4" style="width: 16rem">
+            <img src="" class="card-img-top" alt="Peach Melba Sundae" />
+            <div class="card-body">
+              <h5 class="card-title">Peach Melba Sundae</h5>
+              <p class="card-text text-muted">
+                Peach ice cream topped with raspberry sauce
+              </p>
+              <div class="d-flex align-items-center mb-2">
+                <div class="text-warning">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span class="ml-2 text-muted">(4.7/5)</span>
+              </div>
+              <p class="text-pink-500 h5">$5.39</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="footer-logo h4 font-weight-bold mb-2">
+              Icy<span>Tales</span>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+              nec odio. Praesent libero. Sed cursus ante dapibus diam.
+            </p>
+          </div>
+          <div class="col-md-4 mb-4">
+            <h5 class="text-white mb-3">Navigation</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white">Home</a></li>
+              <li><a href="#" class="text-white">Products</a></li>
+              <li><a href="#" class="text-white">Blog</a></li>
+              <li><a href="#" class="text-white">About</a></li>
+              <li><a href="#" class="text-white">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5 class="text-white mb-3">Contact</h5>
+            <p>Address: 123 King Street Melbourne, 3000, Australia</p>
+            <p>Email: info@example.com</p>
+            <p>Phone: +123456780123</p>
+            <div class="d-flex mt-3">
+              <a href="#" class="text-white mr-3"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="text-white mr-3"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="text-white mr-3"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="text-white"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="text-center text-white mt-4">
+          <p>© 2023 IcyTales Theme. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
