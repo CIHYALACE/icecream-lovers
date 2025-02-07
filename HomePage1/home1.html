@@ -26,6 +26,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="stylesheet" href="footer.css" />
+
     <style>
       :root {
         --brand-main: #683292;
@@ -40,8 +42,8 @@
         --bs-btn-hover-bg: var(--brand-main);
         --bs-btn-hover-bg: hsl(from var(--brand-main) h s 30);
         border: none;
-    }
-    .btn-secondary {
+      }
+      .btn-secondary {
         --bs-btn-bg: var(--brand-accent);
         --bs-btn-hover-bg: hsl(from var(--brand-accent) h s 30);
         border: none;
@@ -54,8 +56,6 @@
           #f8eae1 66%,
           #eaf8f9 91%
         );
-        
-
       }
 
       .text-main {
@@ -87,7 +87,7 @@
         text-align: left;
         font-family: "Berkshire Swash";
       }
-      .nav-brand {
+      .fancy-font {
         font-family: "Berkshire Swash";
       }
       .nav-link,
@@ -112,7 +112,7 @@
         flex-grow: 1;
         min-width: 0;
         min-height: 0;
-        height:40%;
+        height: 40%;
         width: 40%;
         display: flex;
         justify-content: center;
@@ -134,7 +134,7 @@
         top: 3rem;
         left: 1rem;
       }
-      .bot-img{
+      .bot-img {
         position: absolute;
         bottom: 0;
         background-image: url(/images/home1/cloud.png);
@@ -142,6 +142,16 @@
         width: 100vw;
         height: 6rem;
         background-repeat: repeat-x;
+      }
+      .section2 {
+        background-image: url(/images/home1/sec2-bg.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      .section3{
+        
+background: linear-gradient(301deg, #EFD7EF 8%, #F5F9FC 43%, #F8EAE1 64%, #EAF8F9 87%);
       }
     </style>
     <title>IceDelights</title>
@@ -153,7 +163,7 @@
         <nav class="row py-4">
           <div class="col-4">
             <a
-              class="nav-brand h1 d-flex text-decoration-none align-items-center flex-nowrap"
+              class="nav-brand fancy-font h1 d-flex text-decoration-none align-items-center flex-nowrap"
               href="/index.html"
             >
               <img src="/images/logo.png" alt="ice delights logo" />
@@ -264,9 +274,106 @@
           </div>
         </section>
       </div>
-      <div
-        class="bot-img"
-      ></div>
+      <div class="bot-img"></div>
     </header>
+    <section class="section2">
+      <div class="container d-flex justify-content-center">
+        <img class="img-fluid col-5" src="/images/home1/sec2.png" />
+        <div class="col-1"></div>
+        <div class="col-4 d-flex flex-column gap-3 align-items-start justify-content-center">
+          <div class="h1 fancy-font">
+            Relive the Sweet Memories of Classic<br />
+            <span class="text-accent"> Ice Creams </span>
+          </div>
+          <div>
+            From rich chocolate fudge to creamy vanilla sundaes, discover our
+            menu of classic ice cream creations.
+          </div>
+          <div class="btn btn-secondary rounded-pill">
+            Explore our menu <i class="fa fa-arrow-right"></i>
+          </div>
+        </div>
+        <div class="col-2"></div>
+      </div>
+    </section>
+    <section class="section3 text-center py-5">
+      <div class="h1 fancy-font">
+        Our
+        <span class="text-accent">
+          Classic
+        </span>
+        Favorites
+      </div>
+      <div>
+        Check out our top products that our customers love.
+      </div>
+    </section>
+    <footer>
+      <div><img src="/images/footer-image.png.png" /></div>
+
+      <div class="container w-75" id="content">
+        <div class="info-container">
+          <div class="info">
+            <div class="navbar-brand d-flex align-items-center" id="logo">
+              <img src="/images/logo2.png" alt="Logo" class="me-2" />
+              <span>Icy</span>Tales
+            </div>
+          </div>
+
+          <div class="info">
+            <p class="title">Navigation</p>
+            <div id="navigationList">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="info">
+            <div>
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <div>
+                <h5>Address:</h5>
+                <p>121 King Street Melbourne, 3000, Australia</p>
+              </div>
+            </div>
+
+            <div>
+              <i class="fa fa-envelope-open-o" aria-hidden="true"></i>
+              <div>
+                <h5>Email:</h5>
+                <p>info@example.com</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="info">
+            <div>
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <div>
+                <h5>+123456780123</h5>
+                <p>Got Questions? Call us 24/7</p>
+              </div>
+            </div>
+            <div id="social">
+              <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div id="Copyright">
+          Copyright © 2024 BlackRise Themes Inc All rights reserved.
+        </div>
+      </div>
+
+      <div id="last"><button>&#8593;</button></div>
+    </footer>
   </body>
 </html>
