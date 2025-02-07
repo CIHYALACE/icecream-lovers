@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream Shop - Special Offers</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .special-tag {
+            position: absolute;
+            top: 10px;
+            right: -15px;
+            background: #ff0066;
+            color: white;
+            padding: 2px 15px;
+            transform: rotate(45deg);
+            font-size: 12px;
+        }
+        
+        .product-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            transition: transform 0.3s;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .heart-icon {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            color: #ff0066;
+            cursor: pointer;
+        }
+        
+        .price {
+            color: #ff0066;
+            font-weight: bold;
+        }
+        
+        .old-price {
+            text-decoration: line-through;
+            color: #999;
+            font-size: 0.9em;
+        }
+        
+        .rating {
+            color: #ffd700;
+        }
+        
+        .summer-special {
+            background: linear-gradient(135deg, #800080 0%, #ff0066 100%);
+            color: white;
+            border-radius: 0;
+        }
+        
+        .summer-special-img {
+            max-width: 300px;
+        }
+        
+        .breadcrumb-item + .breadcrumb-item::before {
+            content: "/"
+        }
+    </style>
+</head>
+<body>
+    <div class="container py-5">
+        <h1 class="text-center mb-3">Special Offers</h1>
+        
+        <nav aria-label="breadcrumb" class="mb-4">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#" class="text-decoration-none">Home</a></li>
+                <li class="breadcrumb-item"><a href="#" class="text-decoration-none">Pages</a></li>
+                <li class="breadcrumb-item active">Special Offers</li>
+            </ol>
+        </nav>
+
+        <div class="text-center mb-5">
+            <h2>Upto <span class="text-danger">30%</span> Discount</h2>
+            <p class="text-muted">Discover the favorites that keep our customers coming back for more.</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6">
+                <div class="card product-card h-100">
+                    <div class="special-tag">Special</div>
+                    <div class="heart-icon">❤</div>
+                    <img src="strawberrysundae.png" class="card-img-top p-3" alt="Strawberry Sundae">
+                    <div class="card-body">
+                        <h5 class="card-title">Strawberry Sundae</h5>
+                        <div class="rating mb-2">★★★★★ <span class="text-muted">4.9/5</span></div>
+                        <p class="card-text text-muted">Strawberry ice cream with fresh strawberries</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <span class="old-price me-2">$10.99</span>
+                                <span class="price">$5.99</span>
+                            </div>
+                            <button class="btn btn-primary rounded-circle"><i class="bi bi-cart"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           
+            <div class="col-lg-3 col-md-6">
+                <div class="card product-card h-100">
+                    <div class="special-tag">Special</div>
+                    <div class="heart-icon">❤</div>
+                    <img src="chocolateship.png" class="card-img-top p-3" alt="Chocolate Chip Cookie Cone">
+                    <div class="card-body">
+                        <h5 class="card-title">Chocolate Chip Cookie Cone</h5>
+                        <div class="rating mb-2">★★★★★ <span class="text-muted">4.9/5</span></div>
+                        <p class="card-text text-muted">Chocolate chip cookie dough ice cream in a cone</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <span class="old-price me-2">$13.99</span>
+                                <span class="price">$4.49</span>
+                            </div>
+                            <button class="btn btn-primary rounded-circle"><i class="bi bi-cart"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="card product-card h-100">
+                    <div class="special-tag">Special</div>
+                    <div class="heart-icon">❤</div>
+                    <img src="rocky road sundae.png" class="card-img-top p-3" alt="Rocky Road Sundae">
+                    <div class="card-body">
+                        <h5 class="card-title">Rocky Road Sundae</h5>
+                        <div class="rating mb-2">★★★★★ <span class="text-muted">4.9/5</span></div>
+                        <p class="card-text text-muted">Marshmallow and nutty rocky road ice cream</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <span class="old-price me-2">$15.99</span>
+                                <span class="price">$5.69</span>
+                            </div>
+                            <button class="btn btn-primary rounded-circle"><i class="bi bi-cart"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="card product-card h-100">
+                    <div class="special-tag">Special</div>
+                    <div class="heart-icon">❤</div>
+                    <img src="peach sundae.png" class="card-img-top p-3" alt="Peach Melba Sundae">
+                    <div class="card-body">
+                        <h5 class="card-title">Peach Melba Sundae</h5>
+                        <div class="rating mb-2">★★★★★ <span class="text-muted">4.9/5</span></div>
+                        <p class="card-text text-muted">Peach ice cream topped with raspberry sauce</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <span class="old-price me-2">$16.99</span>
+                                <span class="price">$5.39</span>
+                            </div>
+                            <button class="btn btn-primary rounded-circle"><i class="bi bi-cart"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card summer-special mt-5">
+            <div class="card-body p-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h2 class="display-4 mb-4">Summer Special!</h2>
+                        <h3 class="mb-4">Buy One Sundae, Get One 50% Off!</h3>
+                        <p class="mb-4">Use code: SUMMER50 at checkout.</p>
+                        <button class="btn btn-light px-4 py-2">Get This Deal</button>
+                    </div>
+                    <div class="col-lg-6 text-center">
+                        <img src="summerspecail.png" class="summer-special-img" alt="Summer Special Ice Cream">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
