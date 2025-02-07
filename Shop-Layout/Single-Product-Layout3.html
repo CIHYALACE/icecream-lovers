@@ -11,10 +11,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
       rel="stylesheet"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
     <style>
       body {
         font-family: "Roboto", sans-serif;
@@ -22,101 +18,62 @@
       .header {
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       }
-      .breadcrumb-nav a {
-        color: #6c757d;
+      .product-image {
+        max-width: 100%;
+        height: auto;
       }
-      .breadcrumb-nav a:hover {
-        color: #6f42c1;
-      }
-      .product-image img {
-        width: 100%;
-        border-radius: 0.5rem;
-      }
-      .product-thumbnails img {
-        width: 100px;
-        height: 100px;
-        border-radius: 0.5rem;
-      }
-      .product-details h2 {
-        font-size: 2rem;
-      }
-      .product-details .price {
-        color: #e83e8c;
-        font-size: 1.5rem;
-      }
-      .product-details .color-options button,
-      .product-details .size-options button {
-        width: 2rem;
-        height: 2rem;
-        border-radius: 50%;
-      }
-      .product-details .size-options button {
-        border-radius: 0.25rem;
-      }
-      .related-products img {
-        width: 100%;
-        border-radius: 0.5rem;
+      .related-product img {
+        max-width: 100%;
+        height: auto;
       }
       .footer {
         background-color: #6f42c1;
         color: white;
       }
       .footer a {
-        color: white;
+        color: #d1d1d1;
       }
       .footer a:hover {
-        text-decoration: underline;
+        color: white;
       }
     </style>
   </head>
   <body class="bg-light">
-    <!-- Header -->
     <header class="header bg-white py-3">
       <div class="container d-flex justify-content-between align-items-center">
         <div class="d-flex align-items-center">
-          <img
-            src=""
-            alt="IcyTales Logo"
-            class="img-fluid"
-            style="height: 50px; width: 50px"
-          />
-          <span class="h4 font-weight-bold text-purple ml-2">IcyTales</span>
+          <img src="" alt="IcyTales Logo" height="50" />
+          <span class="text-primary font-weight-bold ml-2">IcyTales</span>
         </div>
         <nav class="d-none d-md-flex">
-          <a href="#" class="text-dark mx-3">Home</a>
-          <a href="#" class="text-dark mx-3">About Us</a>
-          <a href="#" class="text-dark mx-3">Pages</a>
-          <a href="#" class="text-dark mx-3">Blog</a>
-          <a href="#" class="text-dark mx-3">Faq's</a>
+          <a class="text-dark mx-3" href="#">Home</a>
+          <a class="text-dark mx-3" href="#">About Us</a>
+          <a class="text-dark mx-3" href="#">Blog</a>
+          <a class="text-dark mx-3" href="#">Faq's</a>
+          <a class="text-dark mx-3" href="#">Pages</a>
         </nav>
         <button class="btn btn-pink">Contact Us</button>
       </div>
     </header>
-    <!-- Main Content -->
     <main class="container py-5">
-      <!-- Breadcrumb -->
       <div class="text-center mb-5">
-        <h1 class="display-4">Single Product Layout 02</h1>
-        <nav class="breadcrumb-nav">
-          <a href="#">Home</a> / <a href="#">Shop</a> /
-          <span class="text-purple">Product Detail</span>
-        </nav>
-      </div>
-      <!-- Product Section -->
-      <div class="row">
-        <!-- Product Image -->
-        <div class="col-lg-6 product-image">
-          <img src="" alt="Coconut Milk Chocolate Chip" />
-          <div class="d-flex mt-3">
-            <img src="" alt="Thumbnail 1" class="mr-2" />
-            <img src="" alt="Thumbnail 2" class="mr-2" />
-            <img src="" alt="Thumbnail 3" />
-          </div>
+        <h1 class="display-4">Single Product Layout 03</h1>
+        <div class="text-muted">
+          <a class="text-primary" href="#">Home</a> /
+          <a class="text-primary" href="#">Shop</a> /
+          <span>Product Detail</span>
         </div>
-        <!-- Product Details -->
-        <div class="col-lg-6 product-details">
-          <h2>Coconut Milk Chocolate Chip</h2>
-          <div class="d-flex align-items-center mt-2">
+      </div>
+      <div class="row">
+        <div class="col-lg-6 mb-4">
+          <img
+            src=""
+            alt="Classic Pistachio Gelato"
+            class="product-image rounded shadow"
+          />
+        </div>
+        <div class="col-lg-6">
+          <div class="d-flex align-items-center mb-3">
             <span class="text-warning">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -124,228 +81,192 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star-half-alt"></i>
             </span>
-            <span class="ml-2 text-muted">(4.8/5)</span>
+            <span class="text-muted ml-2">(4.8/5)</span>
           </div>
-          <p class="price mt-4">$5.99</p>
-          <p class="text-muted mt-4">
-            Neque porro quisquam est qui dolorem ipsum quia dolor sit amet
-            consectetur adipisci velit, sed quia non numquam eius modi tempora
+          <h2 class="font-weight-bold mb-3">Classic Pistachio Gelato</h2>
+          <p class="text-pink h4 font-weight-bold mb-3">$6.29</p>
+          <p class="text-muted mb-4">
+            Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+            consectetur, adipisci velit, sed quia non numquam eius modi tempora
             incidunt ut labore et dolore magnam.
           </p>
-          <div class="mt-4">
-            <h5>Color:</h5>
+          <div class="mb-4">
+            <span class="text-muted">Color:</span>
             <div class="d-flex mt-2">
-              <button class="btn btn-danger mr-2"></button>
-              <button class="btn btn-success mr-2"></button>
-              <button class="btn btn-primary mr-2"></button>
-              <button class="btn btn-warning mr-2"></button>
-              <button class="btn btn-brown"></button>
+              <button
+                class="btn btn-success rounded-circle mr-2"
+                style="width: 24px; height: 24px"
+              ></button>
+              <button
+                class="btn btn-brown rounded-circle mr-2"
+                style="width: 24px; height: 24px"
+              ></button>
+              <button
+                class="btn btn-pink rounded-circle mr-2"
+                style="width: 24px; height: 24px"
+              ></button>
+              <button
+                class="btn btn-warning rounded-circle"
+                style="width: 24px; height: 24px"
+              ></button>
             </div>
           </div>
-          <div class="mt-4">
-            <h5>Size:</h5>
+          <div class="mb-4">
+            <span class="text-muted">Size:</span>
             <div class="d-flex mt-2">
-              <button class="btn btn-outline-secondary mr-2">L</button>
+              <button class="btn btn-outline-secondary mr-2">S</button>
               <button class="btn btn-outline-secondary mr-2">M</button>
-              <button class="btn btn-outline-secondary">S</button>
+              <button class="btn btn-outline-secondary">L</button>
             </div>
           </div>
-          <div class="mt-4 d-flex align-items-center">
-            <input type="number" class="form-control w-25 mr-3" value="1" />
-            <button class="btn btn-pink">Add to Cart</button>
+          <div class="d-flex align-items-center mb-4">
+            <button class="btn btn-outline-secondary">-</button>
+            <span class="px-3">1</span>
+            <button class="btn btn-outline-secondary">+</button>
           </div>
-          <div class="mt-4 d-flex">
-            <button class="btn btn-link text-muted mr-3">
+          <div class="d-flex">
+            <button class="btn btn-pink mr-3">Add to Cart</button>
+            <button class="btn btn-outline-secondary mr-3">
               <i class="far fa-heart"></i> Add to wishlist
             </button>
-            <button class="btn btn-link text-muted">
+            <button class="btn btn-outline-secondary">
               <i class="fas fa-exchange-alt"></i> Compare
             </button>
           </div>
-          <div class="mt-4">
-            <p class="text-muted">
-              <i class="fas fa-truck"></i> Free Worldwide Shipping on All Orders
-              Over $250
-            </p>
-            <p class="text-muted mt-2">
-              <i class="fas fa-clock"></i> Delivers in 4-7 Working Days
-              <a href="#" class="text-purple">Terms & Conditions</a>
-            </p>
-          </div>
         </div>
       </div>
-      <!-- Tabs Section -->
       <div class="mt-5">
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <ul class="nav nav-tabs">
           <li class="nav-item">
-            <a
-              class="nav-link active"
-              id="description-tab"
-              data-toggle="tab"
-              href="#description"
-              role="tab"
-              aria-controls="description"
-              aria-selected="true"
-              >Description</a
-            >
+            <a class="nav-link active text-pink" href="#">Description</a>
           </li>
           <li class="nav-item">
-            <a
-              class="nav-link"
-              id="additional-info-tab"
-              data-toggle="tab"
-              href="#additional-info"
-              role="tab"
-              aria-controls="additional-info"
-              aria-selected="false"
-              >Additional Information</a
-            >
+            <a class="nav-link text-muted" href="#">Additional Information</a>
           </li>
           <li class="nav-item">
-            <a
-              class="nav-link"
-              id="reviews-tab"
-              data-toggle="tab"
-              href="#reviews"
-              role="tab"
-              aria-controls="reviews"
-              aria-selected="false"
-              >Reviews</a
-            >
+            <a class="nav-link text-muted" href="#">Reviews</a>
           </li>
         </ul>
-        <div class="tab-content mt-4" id="myTabContent">
-          <div
-            class="tab-pane fade show active"
-            id="description"
-            role="tabpanel"
-            aria-labelledby="description-tab"
-          >
-            <p class="text-muted">
-              Ratione voluptatem sequi nesciunt neque porro quisquam est, qui
-              dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
-              sed quia non numquam eius modi tempora incidunt ut labore et
-              dolore magnam aliquam quaerat voluptatem.
-            </p>
-            <p class="text-muted mt-4">
-              Quia voluptas sit aspernatur aut odit aut fugit, sed quia
-              consequuntur magni dolores eos qui ratione voluptatem sequi
-              nesciunt neque porro quisquam est, qui dolorem ipsum quia dolor
-              sit amet, consectetur, adipisci velit, sed quia non numquam eius
-              modi tempora incidunt ut labore et dolore magnam aliquam quaerat
-              voluptatem.
-            </p>
-          </div>
-          <div
-            class="tab-pane fade"
-            id="additional-info"
-            role="tabpanel"
-            aria-labelledby="additional-info-tab"
-          >
-            <!-- Additional Information Content -->
-          </div>
-          <div
-            class="tab-pane fade"
-            id="reviews"
-            role="tabpanel"
-            aria-labelledby="reviews-tab"
-          >
-            <!-- Reviews Content -->
-          </div>
-        </div>
-      </div>
-      <!-- Related Products Section -->
-      <div class="mt-5">
-        <h2 class="text-center">
-          Related <span class="text-pink">Products</span>
-        </h2>
-        <p class="text-center text-muted">
-          Choose from some of related products
-        </p>
-        <div class="row mt-4">
-          <div class="col-md-4">
-            <img src="" alt="Coconut Milk Chocolate Chip" class="img-fluid" />
-            <h5 class="mt-3">Coconut Milk Chocolate Chip</h5>
-            <div class="d-flex align-items-center mt-2">
-              <span class="text-warning">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-              </span>
-              <span class="ml-2 text-muted">(4.8/5)</span>
-            </div>
-            <p class="price mt-2">$5.99</p>
-            <button class="btn btn-pink mt-2">Add to Cart</button>
-          </div>
-          <div class="col-md-4">
-            <img src="" alt="Almond Joy Sundae" class="img-fluid" />
-            <h5 class="mt-3">Almond Joy Sundae</h5>
-            <div class="d-flex align-items-center mt-2">
-              <span class="text-warning">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-              </span>
-              <span class="ml-2 text-muted">(4.8/5)</span>
-            </div>
-            <p class="price mt-2">$6.49</p>
-            <button class="btn btn-pink mt-2">Add to Cart</button>
-          </div>
-          <div class="col-md-4">
-            <img src="" alt="Berry Sorbet" class="img-fluid" />
-            <h5 class="mt-3">Berry Sorbet</h5>
-            <div class="d-flex align-items-center mt-2">
-              <span class="text-warning">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-              </span>
-              <span class="ml-2 text-muted">(4.8/5)</span>
-            </div>
-            <p class="price mt-2">$4.89</p>
-            <button class="btn btn-pink mt-2">Add to Cart</button>
-          </div>
+        <div class="mt-4 text-muted">
+          <p>
+            Ratione voluptatem sequi nesciunt neque porro quisquam est, qui
+            dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed
+            quia non numquam eius modi tempora incidunt ut labore et dolore
+            magnam aliquam quaerat voluptatem.
+          </p>
+          <p class="mt-4">
+            Quia voluptas sit aspernatur aut odit aut fugit, sed quia
+            consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt
+            neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+            consectetur, adipisci velit, sed quia non numquam eius modi tempora
+            incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+          </p>
         </div>
       </div>
     </main>
-    <!-- Footer -->
+    <section class="bg-light py-5">
+      <div class="container text-center">
+        <h2 class="display-4">
+          Related <span class="text-pink">Products</span>
+        </h2>
+        <p class="text-muted mb-5">Choose from some of related products</p>
+        <div class="row">
+          <div class="col-md-3 mb-4">
+            <div class="card related-product">
+              <img src="" alt="Classic Pistachio Gelato" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title">Classic Pistachio Gelato</h5>
+                <p class="text-pink h5 font-weight-bold">$6.29</p>
+                <button class="btn btn-pink">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="card related-product">
+              <img
+                src=""
+                alt="Strawberry Balsamic Gelato"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Strawberry Balsamic Gelato</h5>
+                <p class="text-pink h5 font-weight-bold">$6.49</p>
+                <button class="btn btn-pink">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="card related-product">
+              <img
+                src=""
+                alt="Chocolate Hazelnut Gelato"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Chocolate Hazelnut Gelato</h5>
+                <p class="text-pink h5 font-weight-bold">$6.79</p>
+                <button class="btn btn-pink">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="card related-product">
+              <img src="" alt="Tiramisu Gelato" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title">Tiramisu Gelato</h5>
+                <p class="text-pink h5 font-weight-bold">$6.59</p>
+                <button class="btn btn-pink">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <footer class="footer py-5">
       <div class="container">
         <div class="row">
-          <div class="col-md-4 mb-4 mb-md-0">
-            <img
-              src=""
-              alt="IcyTales Logo"
-              class="img-fluid"
-              style="height: 50px; width: 50px"
-            />
-            <span class="h4 font-weight-bold ml-2">IcyTales</span>
+          <div class="col-md-4 mb-4">
+            <img src="" alt="IcyTales Logo" height="50" class="mb-2" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+              nec odio. Praesent libero. Sed cursus ante dapibus diam.
+            </p>
           </div>
-          <div class="col-md-4 mb-4 mb-md-0">
-            <h5>Navigation</h5>
-            <ul class="list-unstyled mt-3">
+          <div class="col-md-4 mb-4">
+            <h5 class="font-weight-bold">Navigation</h5>
+            <ul class="list-unstyled">
               <li><a href="#">Home</a></li>
               <li><a href="#">Products</a></li>
+              <li><a href="#">About</a></li>
               <li><a href="#">Blog</a></li>
-              <li><a href="#">Shop</a></li>
               <li><a href="#">Contact</a></li>
             </ul>
           </div>
           <div class="col-md-4">
-            <h5>Address</h5>
-            <p class="mt-3">123 King Street Melbourne, 3000, Australia</p>
+            <h5 class="font-weight-bold">Address</h5>
+            <p>123 King Street Melbourne, 3000, Australia</p>
             <p>Email: info@example.com</p>
             <p>Phone: +123456780123</p>
+            <div class="d-flex mt-3">
+              <a href="#" class="text-muted mr-3"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="text-muted mr-3"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="text-muted mr-3"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="text-muted"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
           </div>
         </div>
         <div class="text-center mt-4">
-          <p>© 2023 IcyTales. All rights reserved.</p>
+          <p class="text-muted">
+            © 2023 BlackSilver Themes. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>
