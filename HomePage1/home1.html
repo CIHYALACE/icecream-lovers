@@ -195,6 +195,31 @@
       .category-card img {
         visibility: hidden;
       }
+      .section5 {
+        background: url(../images/home1/sec5-bg.png);
+        background-size: cover;
+      }
+      .mirrored {
+        transform: scaleX(-1);
+        height: 60%;
+      }
+      .section7 {
+        background: url(../images/home1/sec7-bg.png);
+        background-size: cover;
+        background-position: center;
+      }
+      .section8 {
+        background: url(../images/home1/sec8-bg.png);
+        background-size: initial;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      .section9{ 
+        background: url(../images/home1/sec9-bg.png), linear-gradient(297deg, #EFD7EF 8%, #F5F9FC 43%, #F8EAE1 64%, #EAF8F9 87%);
+        background-size: cover;
+        background-position: center;
+      }
+      
     </style>
     <title>IceDelights</title>
   </head>
@@ -202,7 +227,7 @@
     <header class="position-relative">
       <img class="leftimg" src="../images/home1/banner-lefttop.png" />
       <div class="container">
-        <nav class="row py-4">
+        <nav class="row py-4 d-flex align-items-center justify-content-between">
           <div class="col-4">
             <a
               class="nav-brand fancy-font h1 d-flex text-decoration-none align-items-center flex-nowrap"
@@ -213,9 +238,9 @@
               ><span class="text-main">Tales</span>
             </a>
           </div>
-          <div class="col-8">
+          <div class="col-8 d-none d-md-block">
             <ul
-              class="nav d-flex justify-content-end flex-nowrap align-items-center"
+              class="nav d-flex justify-content-evenly flex-nowrap align-items-center"
             >
               <li class="nav-item dropdown">
                 <a
@@ -231,7 +256,7 @@
                   <a class="dropdown-item" href="#">Action</a>
                 </div>
               </li>
-              <li class="nav-item">
+              <li class="nav-item d-none d-lg-block">
                 <a href="#" class="nav-link" aria-current="page">About Us</a>
               </li>
               <li class="nav-item dropdown">
@@ -247,11 +272,11 @@
                 <div class="dropdown-menu py-0 border-0 overflow-hidden">
                   <a class="dropdown-item" href="#">Action</a>
                   <a class="dropdown-item" href="#">Another action</a>
-                  <div class="dropdown-divider"></div>
+
                   <a class="dropdown-item" href="#">Action</a>
                 </div>
               </li>
-              <li class="nav-item dropdown">
+              <li class="nav-item dropdown d-none d-lg-block">
                 <a
                   class="nav-link dropdown-toggle"
                   data-bs-toggle="dropdown"
@@ -261,10 +286,10 @@
                   aria-expanded="false"
                   >Blog</a
                 >
-                <div class="dropdown-menu">
+                <div class="dropdown-menu py-0 border-0 overflow-hidden">
                   <a class="dropdown-item" href="#">Action</a>
                   <a class="dropdown-item" href="#">Another action</a>
-                  <div class="dropdown-divider"></div>
+
                   <a class="dropdown-item" href="#">Action</a>
                 </div>
               </li>
@@ -282,17 +307,20 @@
                 </a>
               </li>
               <li
-                class="btn btn-secondary rounded-pill bg-accent border-0 shadow-accent"
+                class="btn btn-secondary rounded-pill bg-accent border-0 shadow-accent d-none d-lg-block"
               >
-                <a href="#" class="nav-link text-white"
+                <a href="#" class="nav-link text-white text-nowrap"
                   >Contact Us <i class="fa fa-arrow-right"></i
                 ></a>
               </li>
             </ul>
           </div>
+          <div class="col-8 text-end">
+            <i class="fa d-block d-md-none fa-bars fs-2"></i>
+          </div>
         </nav>
         <section
-          class="hero d-flex flex-row align-items-center justify-content-center pb-5"
+          class="hero d-flex flex-column flex-lg-row align-items-center justify-content-center pb-5"
         >
           <div class="hero-text">
             <div class="hero-heading h3">
@@ -319,11 +347,11 @@
       <div class="bot-img"></div>
     </header>
     <section class="section2">
-      <div class="container d-flex justify-content-center">
-        <img class="img-fluid col-5" src="../images/home1/sec2.png" />
+      <div class="container d-flex flex-column-reverse flex-lg-row align-items-center justify-content-center">
+        <img class="img-fluid col-9 col-lg-5" src="../images/home1/sec2.png" />
         <div class="col-1"></div>
         <div
-          class="col-4 d-flex flex-column gap-3 align-items-start justify-content-center"
+          class="col-9 col-lg-4 d-flex flex-column gap-3 align-items-start justify-content-center"
         >
           <div class="h1 fancy-font">
             Relive the Sweet Memories of Classic<br />
@@ -347,9 +375,11 @@
         Favorites
       </div>
       <div>Check out our top products that our customers love.</div>
-      <img class="sec3-left" src="../images/home1/sec3-left.png" alt="" />
-      <img class="sec3-right" src="../images/home1/sec3-right.png" alt="" />
-      <div class="container d-flex justify-content-center gap-2 my-5 flex-wrap flex-lg-nowrap">
+      <img class="sec3-left d-none d-lg-block" src="../images/home1/sec3-left.png" alt="" />
+      <img class="sec3-right d-none d-lg-block" src="../images/home1/sec3-right.png" alt="" />
+      <div
+        class="container d-flex justify-content-center gap-2 my-5 flex-wrap flex-lg-nowrap"
+      >
         <div class="card col-md-5 col-lg-3 border-0 rounded-5">
           <div class="card-header bg-white border-0 px-2 rounded-4">
             <div class="card-img-top section3 rounded-4 py-5">
@@ -384,7 +414,7 @@
           </div>
         </div>
 
-        <div class="card col-md-5 col-lg-3  border-0 rounded-5">
+        <div class="card col-md-5 col-lg-3 border-0 rounded-5">
           <div class="card-header bg-white border-0 px-2 rounded-4">
             <div class="card-img-top section3 rounded-4 py-5">
               <img src="../images/home1/prod1.png" />
@@ -500,7 +530,9 @@
         Browse through our different categories to find your favorite ice cream
         treats.
       </div>
-      <div class="container d-flex justify-content-center gap-2 my-5 flex-wrap flex-lg-nowrap">
+      <div
+        class="container d-flex justify-content-center gap-2 my-5 flex-wrap flex-lg-nowrap"
+      >
         <div
           class="card col-md-5 col-lg-3 category-card border-0 rounded-4 p-2 position-relative"
         >
@@ -555,18 +587,272 @@
         </div>
       </div>
     </section>
+    <section class="section5 d-flex align-items-center position-relative py-5">
+      <img
+        class="mirrored position-absolute end-0"
+        src="../images/home1/banner-lefttop.png"
+        alt=""
+      />
+      <div
+        class="container d-flex flex-wrap-reverse flex-lg-nowrap align-items-center justify-content-center px-5 gap-5"
+      >
+        <div
+          class="col-12 col-md-8 col-lg-4 text-white text-center text-lg-start"
+        >
+          <div class="h1 fancy-font">Summer Special!</div>
+          <div>Buy One Sundae, Get One 50% Off!</div>
+          <div
+            class="d-flex align-items-center my-3 flex-wrap gap-xxl-3 flex-column flex-lg-row"
+          >
+            <div
+              class="btn col-lg-auto col-7 btn-secondary rounded-pill py-2 px-3"
+            >
+              Get This Deal<i class="fa fa-arrow-right"></i>
+            </div>
+            Use code: SUMMER50 at checkout.
+          </div>
+        </div>
+        <div class="col-10 col-md-8 col-lg-6">
+          <img src="../images/home1/sec5-img.png" alt="" class="img-fluid" />
+        </div>
+      </div>
+    </section>
+    <section class="text-center py-5">
+      <div class="h1 fancy-font">
+        Our
+        <span class="text-accent"> Best </span>
+        Sellers
+      </div>
+      <div>
+        Discover the favorites that keep our customers coming back for more.
+      </div>
 
-    <footer>
-      <div><img src="../images/footer-image.png.png" /></div>
-
-      <div class="container w-75" id="content">
-        <div class="info-container">
-          <div class="info">
-            <div class="navbar-brand d-flex align-items-center" id="logo">
-              <img src="../images/logo2.png" alt="Logo" class="me-2" />
-              <span>Icy</span>Tales
+      <div
+        class="container d-flex justify-content-center gap-2 my-5 flex-wrap flex-lg-nowrap"
+      >
+        <div class="card col-md-5 col-lg-3 border-0 rounded-5">
+          <div class="card-header bg-body-tertiary border-0 px-2 rounded-4">
+            <div class="card-img-top bg-warning-subtle rounded-4 py-5">
+              <img src="../images/home1/cone.png" />
+            </div>
+            <div class="card-body">
+              <div class="d-flex gap-1">
+                <div class="card-title fw-bold fs-5 text-start">
+                  Chocolate chip cookie cone
+                </div>
+                <div
+                  class="wishlist btn btn-light border-0 rounded-pill bg-white rounded-circle position-absolute"
+                >
+                  <i class="fa fa-heart-o fw-bolder" aria-hidden="true"></i>
+                </div>
+                <div class="rating text-nowrap fw-bold">
+                  <i class="fa fa-star" style="color: orange"></i>4.9/5
+                </div>
+              </div>
+              <div class="card-text text-start">
+                Rich chocolate ice cream with chunks of brownie.
+              </div>
+              <div
+                class="d-flex justify-content-between align-items-center mt-2"
+              >
+                <div class="text-accent h3">$5.49</div>
+                <div class="btn btn-primary rounded-pill">
+                  <i class="fa fa-shopping-cart py-1 fs-4"></i>
+                </div>
+              </div>
             </div>
           </div>
+        </div>
+        <div class="card col-md-5 col-lg-3 border-0 rounded-5">
+          <div class="card-header bg-body-tertiary border-0 px-2 rounded-4">
+            <div class="card-img-top bg-warning-subtle rounded-4 py-5">
+              <img src="../images/home1/cone.png" />
+            </div>
+            <div class="card-body">
+              <div class="d-flex gap-1">
+                <div class="card-title fw-bold fs-5 text-start">
+                  Chocolate chip cookie cone
+                </div>
+                <div
+                  class="wishlist btn btn-light border-0 rounded-pill bg-white rounded-circle position-absolute"
+                >
+                  <i class="fa fa-heart-o fw-bolder" aria-hidden="true"></i>
+                </div>
+                <div class="rating text-nowrap fw-bold">
+                  <i class="fa fa-star" style="color: orange"></i>4.9/5
+                </div>
+              </div>
+              <div class="card-text text-start">
+                Rich chocolate ice cream with chunks of brownie.
+              </div>
+              <div
+                class="d-flex justify-content-between align-items-center mt-2"
+              >
+                <div class="text-accent h3">$5.49</div>
+                <div class="btn btn-primary rounded-pill">
+                  <i class="fa fa-shopping-cart py-1 fs-4"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card col-md-5 col-lg-3 border-0 rounded-5">
+          <div class="card-header bg-body-tertiary border-0 px-2 rounded-4">
+            <div class="card-img-top bg-warning-subtle rounded-4 py-5">
+              <img src="../images/home1/cone.png" />
+            </div>
+            <div class="card-body">
+              <div class="d-flex gap-1">
+                <div class="card-title fw-bold fs-5 text-start">
+                  Chocolate chip cookie cone
+                </div>
+                <div
+                  class="wishlist btn btn-light border-0 rounded-pill bg-white rounded-circle position-absolute"
+                >
+                  <i class="fa fa-heart-o fw-bolder" aria-hidden="true"></i>
+                </div>
+                <div class="rating text-nowrap fw-bold">
+                  <i class="fa fa-star" style="color: orange"></i>4.9/5
+                </div>
+              </div>
+              <div class="card-text text-start">
+                Rich chocolate ice cream with chunks of brownie.
+              </div>
+              <div
+                class="d-flex justify-content-between align-items-center mt-2"
+              >
+                <div class="text-accent h3">$5.49</div>
+                <div class="btn btn-primary rounded-pill">
+                  <i class="fa fa-shopping-cart py-1 fs-4"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card col-md-5 col-lg-3 border-0 rounded-5">
+          <div class="card-header bg-body-tertiary border-0 px-2 rounded-4">
+            <div class="card-img-top bg-warning-subtle rounded-4 py-5">
+              <img src="../images/home1/cone.png" />
+            </div>
+            <div class="card-body">
+              <div class="d-flex gap-1">
+                <div class="card-title fw-bold fs-5 text-start">
+                  Chocolate chip cookie cone
+                </div>
+                <div
+                  class="wishlist btn btn-light border-0 rounded-pill bg-white rounded-circle position-absolute"
+                >
+                  <i class="fa fa-heart-o fw-bolder" aria-hidden="true"></i>
+                </div>
+                <div class="rating text-nowrap fw-bold">
+                  <i class="fa fa-star" style="color: orange"></i>4.9/5
+                </div>
+              </div>
+              <div class="card-text text-start">
+                Rich chocolate ice cream with chunks of brownie.
+              </div>
+              <div
+                class="d-flex justify-content-between align-items-center mt-2"
+              >
+                <div class="text-accent h3">$5.49</div>
+                <div class="btn btn-primary rounded-pill">
+                  <i class="fa fa-shopping-cart py-1 fs-4"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="../images/home1/pinkdot.png" alt="" />
+      <img src="../images/home1/graydot.png" alt="" />
+      <img src="../images/home1/graydot.png" alt="" />
+    </section>
+    <section class="section7 d-flex flex-column align-items-center py-5 gap-5">
+      <div class="h1 fancy-font col-8 col-md-4 text-center">
+        Hear from Our <span class="text-accent">Happy Ice Cream</span> Lovers
+      </div>
+      <div class="col-10 col-md-5 text-center">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit unde
+        laudantium omnis, quidem nemo tenetur velit nihil fugit assumenda
+        voluptas corporis, hic deserunt laborum voluptatem pariatur itaque
+        ratione sunt labore!
+      </div>
+      <div class="text-center">
+        <span class="text-accent fw-bold"> Kevin Andrew </span>
+        <br />
+        Happy customer
+        <div class="text-warning">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+      </div>
+      <div>
+        <img src="../images/home1/graydot.png" alt="" />
+        <img src="../images/home1/pinkdot.png" alt="" />
+        <img src="../images/home1/graydot.png" alt="" />
+      </div>
+    </section>
+    <section
+      class="section8 d-flex flex-column align-items-center py-5 gap-2 text-center"
+    >
+      <div class="h1 fancy-font col-10 col-md-5">
+        Sign up For <span class="text-accent">Exclusive Deals</span> and updates
+      </div>
+      <div class="col-10 col-md-8">
+        Get 10% off your next order and stay updated with our latest offers.
+      </div>
+      <div
+      class="col-10 col-md-8 d-flex justify-content-center align-items-center gap-1 my-3"
+      >
+      <input
+      class="flex-grow-1 rounded-pill border-0 shadow-lg py-2 px-4 fw-light"
+      placeholder="Enter Your Email Address"
+      type="email"
+      />
+      <div class="btn btn-secondary rounded-pill shadow px-3">
+        Subscribe <i class="fa fa-arrow-right"></i>
+      </div>
+    </div>
+    <div class="form-check d-flex align-items-center gap-2">
+      <input
+      class="form-check-input rounded-pill border-0 bg-body-secondary fs-4"
+      type="checkbox"
+      />
+      <label class="form-check-label" for="">
+        I agree to the <a href="#" class="text-accent">Privacy Policy</a>
+      </label>
+    </div>
+  </section>
+  <section class="section9 py-5 text-center d-flex flex-column align-items-center gap-1">
+    <div class="h1 fancy-font col-10 col-md-5">
+      Follow us on <span class="text-accent">Instagram</span> 
+    </div>
+    <div class="col-10 col-md-8">
+      Join our Instagram community for updates, special deals, and more!
+    </div>
+    <div class="container d-flex flex-row flex-wrap justify-content-center align-items-center gap-3">
+      <img class="col-8 col-md-6 col-lg-2" src="../images/home1/instag1.png" alt="">
+      <img class="col-8 col-md-6 col-lg-2" src="../images/home1/instag1.png" alt="">
+      <img class="col-8 col-md-6 col-lg-2" src="../images/home1/instag1.png" alt="">
+      <img class="col-8 col-md-6 col-lg-2" src="../images/home1/instag1.png" alt="">
+      <img class="col-8 col-md-6 col-lg-2" src="../images/home1/instag1.png" alt="">
+    </div>
+    
+  </section>
+  <footer>
+    <div><img src="../images/footer-image.png.png" /></div>
+    
+    <div class="container w-75" id="content">
+      <div class="info-container">
+        <div class="info">
+          <div class="navbar-brand d-flex align-items-center" id="logo">
+            <img src="../images/logo2.png" alt="Logo" class="me-2" />
+            <span>Icy</span>Tales
+          </div>
+        </div>
 
           <div class="info">
             <p class="title">Navigation</p>
